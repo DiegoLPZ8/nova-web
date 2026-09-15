@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOVA — Wear the Difference</title>
+  <meta name="description" content="NOVA — ropa con identidad. Colección 01.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#inicio" aria-label="NOVA inicio">
+      <img src="assets/nova-logo.png" alt="NOVA">
+      <span>NOVA</span>
+    </a>
+    <nav>
+      <a href="#coleccion">Colección</a>
+      <a href="#historia">NOVA</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a class="nav-cta" href="#producto">Comprar</a>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">NOVA / COLLECTION 01</p>
+        <h1>WEAR<br><span>THE DIFFERENCE.</span></h1>
+        <p class="hero-text">Diseños para llevar aquello que te representa.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#producto">Ver primer diseño</a>
+          <a class="button ghost" href="#historia">Conocer NOVA</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="assets/ninja-shirt.jpeg" alt="Playera negra NOVA con diseño Ninja 500">
+        <div class="hero-tag">01 / 01</div>
+      </div>
+    </section>
+
+    <section id="coleccion" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">01 — COLLECTION</p>
+        <h2>PRIMER DROP</h2>
+        <p>Una primera pieza creada para quienes convierten sus pasiones en parte de su identidad.</p>
+      </div>
+      <div class="collection-grid">
+        <img src="assets/ninja-design.jpeg" alt="Diseño Ninja 500">
+        <div class="collection-copy">
+          <span class="number">01</span>
+          <h3>NINJA 500</h3>
+          <p>Una pieza gráfica inspirada en la cultura de las motos y el anime, pensada para destacar en una playera negra.</p>
+          <ul>
+            <li>Playera negra</li>
+            <li>Diseño frontal y posterior</li>
+            <li>Edición NOVA / Collection 01</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="producto" class="product-section">
+      <div class="product-image">
+        <img src="assets/ninja-shirt.jpeg" alt="Playera NOVA Ninja 500">
+      </div>
+      <div class="product-info">
+        <p class="eyebrow">NOVA / 001</p>
+        <h2>NINJA 500</h2>
+        <p class="product-desc">El primer diseño de NOVA. Una pieza creada alrededor de una Kawasaki Ninja 500 y una estética de anime.</p>
+        <div class="price">$350 MXN</div>
+        <div class="sizes">
+          <span>TALLAS</span>
+          <button>S</button><button>M</button><button>L</button><button>XL</button>
+        </div>
+        <button class="button primary full" onclick="showOrder()">QUIERO ESTA PLAYERA</button>
+        <p class="small">El botón de compra puede conectarse después a WhatsApp, Mercado Pago o una tienda online.</p>
+      </div>
+    </section>
+
+    <section id="historia" class="story section">
+      <div>
+        <p class="eyebrow">ABOUT NOVA</p>
+        <h2>NO ES SOLO<br>UNA PLAYERA.</h2>
+      </div>
+      <p>NOVA nace para crear ropa con identidad: piezas que no solo se ven bien, sino que cuentan algo sobre quien las lleva. Esta es apenas la primera colección.</p>
+    </section>
+
+    <section id="contacto" class="contact">
+      <p class="eyebrow">STAY CLOSE</p>
+      <h2>ÚNETE A NOVA.</h2>
+      <p>Próximos drops, nuevos diseños y lanzamientos.</p>
+      <a class="button ghost" href="mailto:contacto@nova.example">CONTACTAR</a>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 NOVA</span>
+    <span>WEAR THE DIFFERENCE.</span>
+  </footer>
+
+  <div class="modal" id="orderModal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="close" onclick="closeOrder()" aria-label="Cerrar">×</button>
+      <p class="eyebrow">NOVA / 001</p>
+      <h3>Tu pedido</h3>
+      <p>Para activar compras reales, agrega tu número de WhatsApp en <strong>script.js</strong>.</p>
+      <button class="button primary full" onclick="goWhatsApp()">PEDIR POR WHATSAPP</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
